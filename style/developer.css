@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+
+.section{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;;
+}
+
+
+.section .left-part{
+    width:50%;
+    height:100%;
+    background:url('../img/developer_header.jpeg');
+    background-size:cover;
+    background-position:center center;
+}
+
+
+.section .right-part{
+    width:50%;
+    height:100%;
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-around;
+    overflow:scroll;
+}
+
+.section .right-part h1{
+    text-align:center;
+    font-size:4rem;
+    font-family:'Indie Flower',cursive;
+}
+
+.section .right-part p{
+    font-family:'Roboto',sans-serif;
+    font-size:1.2rem;
+    padding:0 20px;
+    word-wrap:break-word;
+    
+}
+
+.section .right-part p span{
+    font-size:2rem;
+    color:turquoise;
+    letter-spacing:2px;
+}
+
+.section .right-part button{
+    padding:15px 30px;
+    border:none;
+    margin:10px;
+    font-family:'Roboto';
+    transition:all ease 0.5s;
+    cursor: pointer;
+    border-radius:50px;
+    font-size:1.3rem;
+}
+
+.section .right-part .download{
+    background-color:black;
+    color:white;
+}
+
+.section .right-part .download:hover{
+    color:black;
+    background-color:turquoise;
+}
+
+.section .right-part .contact{
+    color:black;
+    background-color:green;
+}
+
+.section .right-part .contact:hover{
+    background-color:black;
+    color:white;
+}
+
+.section .right-part .my-img{
+    position:absolute;
+    width:100px;
+    height:100px;
+    background:url('../img/developer-my-img.jpg');
+    background-size:cover;
+    background-position:center center;
+    z-index:1000;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius:50px;
+    filter:grayscale(1);
+    transition:all ease 0.5s;
+}
+
+
+.section .right-part .my-img:hover{
+    filter:none;
+}
+
+@media only screen and (max-width:1024px){
+    .section{
+        flex-direction:column;
+    }
+
+    .section .right-part{
+        width:100%;
+        height:70%;
+        padding-top:150px;
+    }
+
+    .section .right-part h1{
+        margin:50px 0;
+    }
+
+    .section .right-part .my-img{
+        top:30%;
+        
+    }
+    .section .left-part{
+        width:100%;
+        height:30%;
+    }
+
+    
+}

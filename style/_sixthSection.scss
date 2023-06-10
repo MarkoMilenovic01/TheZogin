@@ -1,0 +1,99 @@
+.sixth-section{
+    padding:50px 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+
+    .contact-us{
+        display:flex;
+        align-items:center;
+        min-height:700px;
+        width:80%;
+        .contact-us-left-part{
+            width:50%;
+            height:100%;
+            padding:50px;
+            background-color:$primaryColor;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            h1{
+                letter-spacing:2px;
+                color:$whiteColor;
+                margin:20px;
+                text-transform: uppercase;
+                font-weight:lighter;
+            }
+            form{
+                display:flex;
+                flex-direction:column;
+                text-align:left;
+                width:80%;
+                label{
+                    color:$whiteColor;
+                    margin:5px;
+                    font-weight:bold;
+                }
+                input{
+                    border-radius:10px;
+                    border:none;
+                    padding:5px;
+                    &:focus{
+                        background-color:$secondaryColor;
+                    }
+                }
+                button {
+                    padding: 15px 30px;
+                    background-color: $primaryColor;
+                    border: none;
+                    color: $whiteColor;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    transition: all ease 0.5s;
+                    margin:10px;
+                    width:30%;
+            
+        
+                    &:hover {
+                        background-color: $whiteColor;
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+
+        .contact-us-right-part{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:space-around;
+            height:100%;
+            width:50%;
+
+            .contact-us-icon{
+                    display:flex;
+                    flex-direction:column;
+                   align-items:center;
+                   color:$secondaryColor;
+                   margin:10px;
+
+
+                .fa{
+                    font-size:30px;
+                    align-self:center;
+                    margin-bottom:10px;
+                    padding:10px;
+                    color:$whiteColor;
+                    background-color:$primaryColor;
+                    border-radius:50px;
+                    &:hover{
+                        color:$primaryColor;
+                        background-color:$whiteColor;
+                    }
+                }
+            }
+           
+        }
+    }
+}

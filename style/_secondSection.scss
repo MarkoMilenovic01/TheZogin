@@ -1,0 +1,124 @@
+/* <section class="second-section">
+<div class="second-section-first-half">
+<div class="first-half-first"></div>
+<div class="first-half-second">
+  <div class="first-half-second-first"></div>
+  <div class="first-half-second-second"></div>
+</div>
+</div>
+<div class="second-section-second-half">
+<img src="img/icon.jpg" alt="">
+<h1>Welcome to Zogin</h1>
+      <h5>"What hurts today makes you stronger tomorrow"</h5>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aut laudantium facere? Accusantium incidunt, quidem at modi blanditiis neque. Consequuntur aperiam repellendus consectetur, voluptatem amet modi blanditiis harum officiis id.</p> <br>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quam deserunt, voluptas sit obcaecati aspernatur fuga cupiditate corporis debitis asperiores vel mollitia est eveniet alias id esse inventore, ipsam impedit.</p>
+</div>
+</section> */
+
+.second-section {
+    
+    padding:50px 10px;
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    
+
+    .second-section-first-half {
+        width: 620px;
+        min-height: 620px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .first-half-first {
+            width: 300px;
+            height: 620px;
+            background: url('../img/6.jpeg');
+            background-position: center center;
+            background-size: cover;
+            
+        }
+
+        .first-half-second {
+            width: 300px;
+            height: 620px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            
+
+            .first-half-second-first {
+                margin-top: 10px;
+                width: 300px;
+                height: 300px;
+                background: url('../img/8.jpeg');
+                background-position: center center;
+                background-size: cover;
+                
+            }
+
+            .first-half-second-second {
+                width: 300px;
+                height: 300px;
+                background: url('../img/7.jpeg');
+                background-position: center center;
+                background-size: cover;
+                
+            }
+        }
+    }
+
+    .second-section-second-half {
+        height: 620px;
+        width: 600px;
+        margin-top: 20px;
+        text-align: left;
+       
+
+        img {
+            margin: 20px;
+        }
+
+        h1 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-weight: lighter;
+            font-size: 50px;
+
+        }
+
+        h5 {
+            color: $primaryColor;
+            font-size: 20px;
+            margin: 10px 0 50px 0;
+        }
+
+        p {
+            color: $secondaryColor;
+        }
+        
+        button {
+            margin:20px;
+            padding: 15px 30px;
+            background-color: $primaryColor;
+            border: none;
+            color: $whiteColor;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: all ease 0.5s;
+
+            &:hover {
+                background-color: $whiteColor;
+                color: $primaryColor;
+            }
+        }
+    }
+}

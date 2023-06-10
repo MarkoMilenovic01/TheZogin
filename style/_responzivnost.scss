@@ -1,0 +1,91 @@
+@media only screen and (max-width: 768px) {
+    .first-section{
+        .first-section-social{
+            i{
+                font-size: 20px !important;
+                margin: 0 10px !important;
+            }
+          
+        }
+        .first-section-text{
+            h1{
+                font-size:35px !important;
+            }
+            h4{
+                font-size:15px !important;
+            }
+        }
+    }
+
+    .second-section{
+        .second-section-first-half{
+            align-items:center !important;
+            justify-content:center !important;
+            .first-half-first{
+                width:100% !important;
+            }
+            .first-half-second-first{
+                width:100% !important;
+            }
+            .first-half-second-second{
+                width:100% !important;
+            }
+        }
+        .second-section-second-half{
+            text-align:center !important;
+        }
+    }
+
+
+    .third-section{
+        padding:50px;
+        .cards{
+            .card{
+                width:100% !important;
+            }
+        }
+    }
+
+    .fifth-section{
+        .table{
+            thead{
+                display:none !important;
+            }
+            tbody,tr,td{
+                display:block !important;
+                width:100% !important;
+            }
+            tr{
+                margin-bottom:15px !important;
+            }
+            td{
+                text-align:right !important;
+                padding-left:50% !important;
+                position:relative !important;
+                
+            }
+            td::before{
+                content:attr(data-label) !important;
+                position:absolute !important;
+                left:0 !important;
+                width:50% !important;
+                padding-left:15px !important; 
+                font-size:15px !important;
+                font-weight:bold !important;
+                text-align:left !important;
+            }
+        }
+    }
+
+    .sixth-section{
+        .contact-us{
+            flex-direction:column !important;
+            .contact-us-left-part{
+                width:100% !important;
+            }
+            .contact-us-right-part{
+                width:100% !important;
+            }
+        }
+    }
+  }

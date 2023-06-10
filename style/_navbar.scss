@@ -1,0 +1,98 @@
+header {
+
+
+
+    .start-menu {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: $whiteColor;
+        top:0;
+        width: 100vw;
+        min-height: 8vh;
+        z-index: 1000;
+        padding: 20px 0;
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 50px;
+            }
+
+            h2 {
+                color: $primaryColor;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                font-weight: lighter;
+                margin-left: 10px;
+            }
+        }
+
+        .hamburger {
+            cursor: pointer;
+
+            div {
+                width: 25px;
+                height: 3px;
+                background-color: $primaryColor;
+                margin: 5px;
+
+            }
+
+        }
+
+
+    }
+
+    .hamburger-menu {
+        position: fixed;
+        top: 8vh;
+        right: 0;
+        height: 92vh;
+        z-index: 1000;
+        width: 55vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $whiteColor;
+        transition: transform 0.5s ease-in;
+
+
+
+
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: $primaryColor;
+                    font-size: 20px;
+                    font-weight: lighter;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid transparent;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        border-bottom: 1px solid $primaryColor;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.hamburger-menu-active {
+    transform: translateX(100%);
+}
