@@ -31,6 +31,15 @@ header {
             }
         }
 
+       .playButton {
+            padding : 10px;
+            border:$whiteColor;
+            background-color : $primaryColor;
+            color:$whiteColor;
+            border-radius: 20px;  
+            font-family:"Poppins";
+          }
+
         .hamburger {
             cursor: pointer;
 
@@ -91,6 +100,9 @@ header {
         }
 
     }
+
+
+
 }
 
 .hamburger-menu-active {

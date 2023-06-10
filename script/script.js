@@ -102,6 +102,26 @@ const CounterFunction = () => {
       observer.observe(counter);
     });
   };
+
+
+const musicPlayer = () => {
+
+  const playButton = document.querySelector('.playButton');
+  const music = document.getElementById('music');
+  
+  playButton.addEventListener('click', () => {
+    if (music.paused) {
+      music.play();
+      playButton.textContent = 'Pause Music';
+    } else {
+      music.pause();
+      playButton.textContent = 'Play Music';
+    }
+  });
+
+}
+
+
   
   
 
@@ -109,6 +129,7 @@ const CounterFunction = () => {
 const app = () => {
     navSlide();
     CounterFunction();
+    musicPlayer();
 
 }
 
